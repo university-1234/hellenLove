@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  * {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: black;
+  }
+  .msg {
+    width: 0;
+    overflow-X: hidden;
+    transition: all 5s;
+    display: flex;
+    margin: 5px;
+    height: 0;
+    height: 5vh;
+  }
+  .msg p {
+    font-size: 1.5rem;
+    margin: 0.5em;
+    flex-shrink: 0;
+  }
+.show {
+  width: 98%;
+}
+  
+  .container {
+    padding: 2%;
+    border: 2px solid maroon;
+    margin: 1%;
+    color: green;
+    background-color: wheat;
+  }
+  .rotate {
+    position: relative;
+    height: 350px;
+    width: 350px;
+  border-radius: 50%;
+    margin: 0 auto 10% auto;
+    background-color: maroon;
+    animation: rot 25s infinite linear;
+  }
+  .one, .two, .three, .four {
+    padding: 2px;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    animation: turn 25s infinite linear;
+  }
+  .one {
+    background-color: green;
+    top: 35%;
+    left: -15%;
+  }
+  .two {
+    background-color: red;
+    left: 35%;
+    top: -15%;
+    
+  }
+  .three {
+    background-color: purple;
+    top: 35%;
+    right: -15%;
+  }
+  .four {
+    background-color: orangered;
+    bottom: -15%;
+    left: 35%;
+  }
+  .love {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  color: white;
+  animation: turn 25s infinite linear;
+  font-size: 2rem;
+}
+  @keyframes turn {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  @keyframes rot {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.rotate img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.specific {
+  font-size: 1.5rem;
+  padding: 1.5em;
+  margin: 1em;
+  background-color: maroon;
+  color: whitesmoke;
+}
+.top {
+  background-color: green;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  background-color: maroon;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="top">
+      <img src="slides/images (1).jpeg">
+      <img src="slides/images (7).jpeg">
+    </div>
+
+  <div class="msg"></div>
+  <div class="rotate">
+    <p class="love">LOVE</p>
+    <div class="one">
+      <img src="slides/IMG_20250514_172304.jpg"/>
+    </div>
+    <div class="two">
+      <img src="slides/IMG_20250514_172357.jpg" />
+    </div>
+    <div class="three">
+      <img src="slides/IMG_20250904_173329.jpg" />
+    </div>
+    <div class="four">
+      <img src="slides/IMG_20250926_123409.jpg" />
+    </div>
+  </div>
+  <div class="specific">
+  <p><em>Dear, Hellen My Love,</em></p><p>This is a special
+  Message to you. You are so special to me and i appreciate walking with you this journey of life. I want to wish happiest December as we look forward to celebrate Christmas and a new year. May God give You strength and energy Honey. I love you more than you have ever Thought. 🌹</p>
+  </div>
+  <footer>
+    <img src="slides/images (8).jpeg" >
+    <img src="slides/images (3).jpeg" >
+  </footer>
+  </main>
+</body>
+
+</html>
